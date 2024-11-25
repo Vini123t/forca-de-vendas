@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.CadastroItemActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:text="Descrição do Produto"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/edDescProduto"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="produto ...."
+            android:backgroundTint="@color/gray50"
+            android:paddingLeft="8dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/round_corner"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:text="Valor de Compra"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/edValorCompra"
+            android:layout_width="match_parent"
+            android:hint="0.00"
+            android:paddingLeft="8dp"
+
+            android:layout_height="48dp"
+            android:inputType="numberDecimal"
+            android:lines="1"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/round_corner"
+            android:backgroundTint="@color/gray50"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:text="Valor de venda"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/edValorVenda"
+            android:layout_width="match_parent"
+            android:hint="0.00"
+            android:paddingLeft="8dp"
+
+            android:layout_height="48dp"
+            android:inputType="numberDecimal"
+            android:lines="1"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/round_corner"
+            android:backgroundTint="@color/gray50"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:text="Quantidade de estoque"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/edQtdEstq"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="0"
+            android:paddingLeft="4dp"
+
+            android:inputType="number"
+            android:lines="1"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/round_corner"
+            android:backgroundTint="@color/gray50"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:text="Código de Barra"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/edCodBarra"
+            android:lines="1"
+            android:paddingLeft="8dp"
+            android:hint="000000000000000000000"
+
+            android:layout_width="match_parent"
+            android:inputType="number"
+            android:layout_height="48dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/round_corner"
+            android:backgroundTint="@color/gray50"/>
+
+        <Button
+            android:id="@+id/btCadastrarProduto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_button"
+            android:gravity="center"
+            android:text="Cadastrar Produto"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:backgroundTint="#4CAF50"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvItems"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+             </LinearLayout>
+        </ScrollView>
+
+</LinearLayout>
